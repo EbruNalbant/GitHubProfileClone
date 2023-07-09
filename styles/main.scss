@@ -1,0 +1,29 @@
+@import "reset";
+@import "variables";
+@import "header";
+@import "content";
+
+body {
+    font-family: $my-font;
+}
+
+a {
+    text-decoration: none;
+    color: $gray;
+}
+
+i {
+    cursor: pointer;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+.grid {
+    display: grid;
+    gap: 20px;
+}

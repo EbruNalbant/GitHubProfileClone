@@ -1,0 +1,164 @@
+.main {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+
+    /* left part of main(profile section) */
+    &-about {
+        @extend .grid;
+        margin: 40px 40px 40px 0px;
+
+        img {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+        }
+
+        &-title {
+            margin-top: 30px;
+
+            h4 {
+                font-weight: 400;
+            }
+        }
+
+        &-description {
+            @extend .grid;
+
+            h3 {
+                font-weight: 400;
+            }
+
+            button {
+                width: 320px;
+                height: 30px;
+                border: 1px solid rgba(27, 31, 35, .2);
+                background-color: #eff3f6;
+                border-radius: 3px;
+                cursor: pointer;
+                transition: .5s;
+
+                &:hover {
+                    background-color: $light-gray;
+                    transition: .5s;
+                }
+            }
+        }
+
+        &-follow {
+            display: flex;
+            gap: 8px;
+            font-weight: 400;
+        }
+
+        &-socials {
+            display: grid;
+            gap: 8px;
+
+            i {
+                margin-right: 6px;
+            }
+
+            &-mail {
+                a:hover {
+                    color: #0969DA;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    /* right part of main */
+    &-projects {
+        width: 100%;
+        margin-top: 60px;
+
+        &-links {
+            @extend .flex;
+
+            i {
+                margin-right: 6px;
+            }
+
+            a {
+                color: $gray;
+            }
+        }
+
+        &-underline {
+            margin-top: 20px;
+            border: 2px solid $light-gray;
+            position: relative;
+
+            span {
+                border: 2px solid orange;
+                position: absolute;
+                top: -2px;
+                left: -2px;
+                width: 14%;
+            }
+        }
+
+        .section {
+            @extend .flex;
+            margin-top: 30px;
+
+            a {
+                font-size: 12px;
+                color: #586069;
+            }
+        }
+
+        /*right part of main (project boxs section */
+        .container {
+            @extend .grid;
+            grid-template-columns: repeat(2, 1fr);
+            margin-top: 10px;
+
+            .main-projects-bar {
+                border: 1px solid $light-gray;
+                border-radius: 3px;
+                position: relative;
+                padding: 10px;
+                height: 100px;
+
+                .up {
+                    display: flex;
+
+                    i {
+                        margin-right: 6px;
+                    }
+
+                    a {
+                        color: #0969DA;
+
+                        &:hover {
+                            text-decoration-line: underline;
+                        }
+                    }
+
+                    .right {
+                        i {
+                            position: absolute;
+                            right: 10px;
+                        }
+                    }
+                }
+
+                .down {
+                    margin-top: 40px;
+
+                    span {
+                        display: inline-block;
+                        background-color: #c6538c;
+                        height: 12px;
+                        width: 12px;
+                        border-radius: 50%;
+                        margin-right: 6px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,192 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: #24292e;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+}
+.header-logo i {
+  font-size: 32px;
+  color: #fff;
+}
+.header-search {
+  position: relative;
+}
+.header-search input {
+  background-color: hsla(0, 0%, 100%, 0.125);
+  width: 300px;
+  height: 25px;
+  padding: 7px;
+  font-size: 12px;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+}
+.header-search i {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+}
+.header-links a {
+  color: #fff;
+  font-size: 14px;
+}
+.header-right-links {
+  margin-left: auto;
+}
+.header-right-links i {
+  color: #ccc;
+}
+
+.main {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  /* left part of main(profile section) */
+  /* right part of main */
+}
+.main-about {
+  margin: 40px 40px 40px 0px;
+}
+.main-about img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+.main-about-title {
+  margin-top: 30px;
+}
+.main-about-title h4 {
+  font-weight: 400;
+}
+.main-about-description h3 {
+  font-weight: 400;
+}
+.main-about-description button {
+  width: 320px;
+  height: 30px;
+  border: 1px solid rgba(27, 31, 35, 0.2);
+  background-color: #eff3f6;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.main-about-description button:hover {
+  background-color: #ccc;
+  transition: 0.5s;
+}
+.main-about-follow {
+  display: flex;
+  gap: 8px;
+  font-weight: 400;
+}
+.main-about-socials {
+  display: grid;
+  gap: 8px;
+}
+.main-about-socials i {
+  margin-right: 6px;
+}
+.main-about-socials-mail a:hover {
+  color: #0969DA;
+  text-decoration: underline;
+}
+.main-projects {
+  width: 100%;
+  margin-top: 60px;
+  /*right part of main (project boxs section */
+}
+.main-projects-links i {
+  margin-right: 6px;
+}
+.main-projects-links a {
+  color: #24292e;
+}
+.main-projects-underline {
+  margin-top: 20px;
+  border: 2px solid #ccc;
+  position: relative;
+}
+.main-projects-underline span {
+  border: 2px solid orange;
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: 14%;
+}
+.main-projects .section {
+  margin-top: 30px;
+}
+.main-projects .section a {
+  font-size: 12px;
+  color: #586069;
+}
+.main-projects .container {
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 10px;
+}
+.main-projects .container .main-projects-bar {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  position: relative;
+  padding: 10px;
+  height: 100px;
+}
+.main-projects .container .main-projects-bar .up {
+  display: flex;
+}
+.main-projects .container .main-projects-bar .up i {
+  margin-right: 6px;
+}
+.main-projects .container .main-projects-bar .up a {
+  color: #0969DA;
+}
+.main-projects .container .main-projects-bar .up a:hover {
+  text-decoration-line: underline;
+}
+.main-projects .container .main-projects-bar .up .right i {
+  position: absolute;
+  right: 10px;
+}
+.main-projects .container .main-projects-bar .down {
+  margin-top: 40px;
+}
+.main-projects .container .main-projects-bar .down span {
+  display: inline-block;
+  background-color: #c6538c;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+
+body {
+  font-family: "Maven Pro", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #24292e;
+}
+
+i {
+  cursor: pointer;
+}
+
+.flex, .header, .header-links, .header-right-links, .main-projects-links, .main-projects .section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.grid, .main-about, .main-about-description, .main-projects .container {
+  display: grid;
+  gap: 20px;
+}/*# sourceMappingURL=main.css.map */
